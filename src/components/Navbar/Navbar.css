@@ -1,0 +1,82 @@
+.navbar-bg-container {
+    height: 10vh;
+    padding: 13px;
+    background-color: white;
+}
+
+.nav-inner-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Add this */
+    padding: 0 20px; /* Add some padding to avoid text touching the edges */
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-mid-section {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: absolute; /* Set position to absolute */
+    left: 50%; /* Position it in the center */
+    transform: translateX(-50%); /* Shift it back by 50% of its own width */
+}
+
+.nav-mid-section p {
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 30px;
+}
+
+.nav-mid-section p:hover{
+    background-color: #B4fb83;
+    cursor: pointer;
+}
+
+.twitter-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.discord-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-last-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-last-sec button:hover{
+    background-color: #B4fb83;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 7px 15px;
+}
+
+.signup-btn {
+    background-color: transparent;
+    border: 2px solid #000;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 7px 15px;
+    font-weight: bold;
+}

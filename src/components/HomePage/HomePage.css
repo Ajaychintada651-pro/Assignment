@@ -1,0 +1,155 @@
+.home-pg-bg-cont{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-pg-heading{
+    font-size: 50px;
+    /* line-height: 40px; */
+    text-align: center;
+}
+
+.typewriter {
+    display: inline-block;
+    /* font-weight: bold; */
+  }
+  
+  .cursor {
+    display: inline-block;
+    background-color: #000;
+    width: 2px;
+    animation: blink 0.7s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+
+.ai-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo Image */
+.logo-image {
+    /* transform: translate(-50%, -50%); */
+    width: 80px; /* Adjust size as needed */
+    /* animation: float 3s ease-in-out infinite, emit-color 2s ease-in-out infinite; */
+    position: relative;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px); /* Move up */
+    }
+}
+
+.image-cont{
+    /* animation: float 3s ease-in-out infinite, emit-color 2s ease-in-out infinite; */
+    /* margin-top: 30px; */
+}
+
+/* Emitting Color Animation */
+@keyframes emit-color {
+    0%, 100% {
+        filter: drop-shadow(0 0 0 #b4fb83);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #b4fb83); /* Emit color */
+    }
+}
+
+
+.shuffle-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    border-radius: 30px;
+    padding: 0px 20px 0px 20px ;
+    height: 45px;
+    font-weight: 500;
+}
+
+.shuffle-btn:hover{
+    background-color: rgba(128, 128, 128, 0.103);
+    cursor: pointer;
+}
+
+.shuffle-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.suffle-text{
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.cloning-btn{
+    background-color: #b4fb83;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    height: 50px;
+
+    padding: 0px 35px 0px 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.soundwave-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.cloning-btn p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.right-arrow{
+    height: 25px;
+    width: 25px;
+}
+
+.cloning-btn2{
+    background-color: transparent;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    height: 50px;
+
+    padding: 0px 35px 0px 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.cloning-btn2 p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cloning-btn:hover{
+    cursor: pointer;
+}
+
+.cloning-btn2:hover{
+    cursor: pointer;
+}
