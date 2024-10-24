@@ -17,8 +17,8 @@ app.get('/api/agent/:agentId', async (req, res) => {
   try {
     const response = await axios.get(`https://api.play.ai/api/v1/agents/${agentId}`, {
       headers: {
-        AUTHORIZATION: 'ak-94fdc931167c4a13947dcd1e160fe4dd',
-        'X-USER-ID': 'gdI8GqG3OGeLcNSr1nbjhgn1iBF2',
+        AUTHORIZATION: 'ak-4a954a1e5ced4bffb469d82ea4ce609b',
+        'X-USER-ID': 'QtLpEGe55fOLspv0wJAwytlgy8I2',
         accept: 'application/json'
       }
     });
@@ -40,8 +40,8 @@ app.post('/api/agent', async (req, res) => {
       criticalKnowledge
     }, {
       headers: {
-        AUTHORIZATION: 'ak-94fdc931167c4a13947dcd1e160fe4dd',
-        'X-USER-ID': 'gdI8GqG3OGeLcNSr1nbjhgn1iBF2',
+        AUTHORIZATION: 'ak-4a954a1e5ced4bffb469d82ea4ce609b',
+        'X-USER-ID': 'QtLpEGe55fOLspv0wJAwytlgy8I2',
         'content-type': 'application/json',
         'accept': 'application/json'
       }
