@@ -1,8 +1,14 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
+require('dotenv').config(); // Load environment variables
+
 const app = express();
 const port = 3020; // Port to run your server on
+
+// Read user id and api key from environment variables
+const USER_ID = process.env.USER_ID;
+const API_KEY = process.env.API_KEY;
 
 app.use(cors()); // Enable CORS for all routes
 app.use(cors({
@@ -17,8 +23,8 @@ app.get('/api/agent/:agentId', async (req, res) => {
   try {
     const response = await axios.get(`https://api.play.ai/api/v1/agents/${agentId}`, {
       headers: {
-        AUTHORIZATION: 'ak-4a954a1e5ced4bffb469d82ea4ce609b',
-        'X-USER-ID': 'QtLpEGe55fOLspv0wJAwytlgy8I2',
+        AUTHORIZATION: API_KEY,
+        'X-USER-ID': USER_ID,
         accept: 'application/json'
       }
     });
@@ -27,7 +33,6 @@ app.get('/api/agent/:agentId', async (req, res) => {
     res.status(error.response?.status || 500).send('Error fetching data from API');
   }
 });
-
 
 app.post('/api/agent', async (req, res) => {
   const { voice, displayName, description, criticalKnowledge } = req.body;
@@ -40,10 +45,10 @@ app.post('/api/agent', async (req, res) => {
       criticalKnowledge
     }, {
       headers: {
-        AUTHORIZATION: 'ak-4a954a1e5ced4bffb469d82ea4ce609b',
-        'X-USER-ID': 'QtLpEGe55fOLspv0wJAwytlgy8I2',
+        AUTHORIZATION: API_KEY,
+        'X-USER-ID': USER_ID,
         'content-type': 'application/json',
-        'accept': 'application/json'
+        accept: 'application/json'
       }
     });
 
@@ -52,7 +57,6 @@ app.post('/api/agent', async (req, res) => {
     res.status(error.response?.status || 500).send('Error fetching data from API');
   }
 });
-
 
 // Start the server
 app.listen(port, () => {
