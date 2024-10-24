@@ -1,4 +1,4 @@
-# Getting Started with Create React App and Websockets Basics
+# Getting Started With Websockets Basics
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
